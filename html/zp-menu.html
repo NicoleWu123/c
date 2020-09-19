@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作品菜单</title>
+    <style type="text/css">
+        * {
+            width: 100%;
+            height: 100%;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/menubg.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.9);
+            width: 95%;
+            height: 90%;
+            /*margin: 0 auto;*/
+            position: absolute;
+            top: 5%;
+            left: 2.5%;
+        }
+
+        .content1 {
+            width: 98%;
+            height: 98%;
+            background-image: url("../images/border.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 1%;
+            top: 1%;
+        }
+
+        .title {
+            position: absolute;
+            left: 39%;
+            top: 7%;
+            width: 22%;
+            height: 12%;
+            background-image: url("../images/zp/zp-biao.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .content2 {
+            width: 66%;
+            height: 63%;
+            /*background-color: #57a2df;*/
+            position: relative;
+            left: 17%;
+            top: 22%;
+
+        }
+
+        .long {
+            width: 18%;
+            height: 100%;
+            background-image: url("../images/zp/longmao.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            float: left;
+            cursor: pointer;
+        }
+
+        .monv {
+            width: 18%;
+            height: 100%;
+            background-image: url("../images/zp/monv.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            float: left;
+            margin-left: 10%;
+            cursor: pointer;
+        }
+
+        .haer {
+            width: 18%;
+            height: 100%;
+            background-image: url("../images/zp/haer.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            float: left;
+            margin-left: 9.5%;
+            cursor: pointer;
+        }
+
+        .jie {
+            width: 18%;
+            height: 100%;
+            background-image: url("../images/zp/jie.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            float: right;
+            cursor: pointer;
+        }
+
+        .return {
+            width: 8%;
+            height: 8%;
+            position: relative;
+            left: 87%;
+            top: 23%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }</style>
+
+</head>
+<body>
+<div class="content">
+    <div class="content1">
+        <div class="title"></div>
+        <div class="content2">
+            <div class="long" onclick="jump('long')"></div>
+            <div class="monv" onclick="jump('monv')"></div>
+            <div class="haer" onclick="jump('haer')"></div>
+            <div class="jie" onclick="jump('jie')"></div>
+        </div>
+        <div class="return"><img src="../images/back.png" onclick="jump('back')"></div>
+    </div>
+</div>
+<script>
+    function jump(getobjs) {
+        if (getobjs == 'long') {
+            window.location.href = './zp-longmao.html';
+        } else if (getobjs == 'monv') {
+            window.location.href = './zp-monv.html';
+        } else if (getobjs == 'haer') {
+            window.location.href = './zp-haer.html';
+        } else if (getobjs == 'jie') {
+            window.location.href = './zp-jie.html';
+        } else if (getobjs == 'back') {
+            window.location.href = './menu.html';
+        }
+    }
+</script>
+</body>
+</html>

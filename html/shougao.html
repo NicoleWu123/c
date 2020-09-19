@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手稿欣赏</title>
+    <style type="text/css">
+        * {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/menubg.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.9);
+            width: 95%;
+            height: 90%;
+            position: absolute;
+            top: 5%;
+            left: 2.5%;
+        }
+
+        .content1 {
+            width: 98%;
+            height: 98%;
+            background-image: url("../images/border.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 1%;
+            top: 1%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .last {
+            width: 10%;
+            height: 8%;
+            position: relative;
+            top: 8%;
+            left: 5%;
+            cursor: pointer;
+        }
+
+        .next {
+            width: 10%;
+            height: 8%;
+            position: relative;
+            left: 85%;
+            cursor: pointer;
+        }
+        .title{
+            background-image: url("../images/shougao/shougao-biao.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            left: 37.5%;
+            top: 6%;
+            width: 25%;
+            height: 15%;
+        }
+        .sg {
+            width: 80%;
+            height: 60%;
+            position: relative;
+            left: 10%;
+            top: 8%;
+            /*background-color: #57a2df;*/
+        }
+
+        .sgContent {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sg1 {
+            float: left;
+            width: 48%;
+            height: 100%;
+        }
+
+        .sg2 {
+            float: right;
+            width: 48%;
+            height: 100%;
+        }
+        .sg3{
+            float: left;
+            width: 42%;
+            height: 90%;
+            margin-top: 2%;
+            margin-left: 10%;
+        }
+        .sg4{
+            float: right;
+            width: 30%;
+            height: 48%;
+            margin-right: 10%;
+        }
+        .sg5{
+            float: right;
+            width: 30%;
+            height: 48%;
+            margin-top: 1%;
+            margin-right: 10%;
+        }
+        .return {
+            width: 9%;
+            height: 8%;
+            position: relative;
+            left: 87%;
+            top: 10%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="content1">
+        <div class="last" onclick="showlast()"><img src="../images/last.png"></div>
+        <div class="next" onclick="shownext()"><img src="../images/next.png"></div>
+        <div class="title"></div>
+        <div class="sg">
+            <div class="sgContent" style="display: block" id="sgContent1">
+                <img src="../images/shougao/sg9.png" class="sg1">
+                <img src="../images/shougao/sg8.png" class="sg2"></div>
+            <div class="sgContent" style="display: none" id="sgContent2">
+                <img src="../images/shougao/sg7.png" class="sg1">
+                <img src="../images/shougao/sg6.png" class="sg2"></div>
+            <div class="sgContent" style="display: none" id="sgContent3">
+                <img src="../images/shougao/sg5.png" class="sg3">
+                <img src="../images/shougao/sg4.png" class="sg4">
+                <img src="../images/shougao/sg3.png" class="sg5"></div>
+            <div class="sgContent" style="display: none" id="sgContent4">
+                <img src="../images/shougao/sg2.png" class="sg1">
+                <img src="../images/shougao/sg1.png" class="sg2"></div>
+        </div>
+        <div class="return"><img src="../images/sg-back.png" onclick="jump()"></div>
+    </div>
+</div>
+<script>
+    var count = 0;
+
+    function showlast() {
+        if (count <= 0) {
+            alert("当前是第一页！");
+        } else {
+            count--
+        }
+        print();
+    }
+    function shownext() {
+        if (count==4){
+            alert("当前已是最后一页！");
+        }else {
+            count++;
+        }
+        print();
+    }
+    function print() {
+        if (count == 2) {
+            document.getElementById("sgContent1").style.display = 'none';
+            document.getElementById("sgContent2").style.display = 'block';
+            document.getElementById("sgContent3").style.display = 'none';
+            document.getElementById("sgContent4").style.display = 'none';
+        } else if (count == 3) {
+            document.getElementById("sgContent1").style.display = 'none';
+            document.getElementById("sgContent2").style.display = 'none';
+            document.getElementById("sgContent3").style.display = 'block';
+            document.getElementById("sgContent4").style.display = 'none';
+        } else if (count == 4) {
+            document.getElementById("sgContent1").style.display = 'none';
+            document.getElementById("sgContent2").style.display = 'none';
+            document.getElementById("sgContent3").style.display = 'none';
+            document.getElementById("sgContent4").style.display = 'block';
+        } else {
+            document.getElementById("sgContent1").style.display = 'block';
+            document.getElementById("sgContent2").style.display = 'none';
+            document.getElementById("sgContent3").style.display = 'none';
+            document.getElementById("sgContent4").style.display = 'none';
+        }
+    }
+    function jump() {
+        window.location.href='./menu.html'
+    }
+</script>
+</body>
+</html>

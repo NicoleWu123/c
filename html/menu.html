@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单</title>
+    <style type="text/css">
+        * {
+            width: 100%;
+            height: 100%;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/menubg.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .content {
+            background: rgba(255,255,255,0.9);
+            width: 95%;
+            height: 90%;
+            /*margin: 0 auto;*/
+            position: absolute;
+            top: 5%;
+            left: 2.5%;
+        }
+
+        .content1 {
+            width: 98%;
+            height: 98%;
+            background-image: url("../images/border.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            padding: 0;
+            position: relative;
+            left: 1%;
+            top: 1%;
+        }
+        .content2{
+            width: 80%;
+            height: 80%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            position: relative;
+            left: 11%;
+            top: 10%;
+
+        }
+        .people{
+            width: 20%;
+            height: 100%;
+            background-image: url("../images/renwu.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            float: left;
+            cursor: pointer;
+        }
+        .zuopin{
+            width: 20%;
+            height: 100%;
+            background-image: url("../images/zuopin.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            float: left;
+            margin-left: 8%;
+            cursor: pointer;
+        }
+        .shougao{
+            width: 20%;
+            height: 100%;
+            background-image: url("../images/shougao.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            float: left;
+            margin-left: 7.5%;
+            cursor: pointer;
+        }
+        .test{
+            width: 20%;
+            height: 100%;
+            background-image: url("../images/test.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            float: right;
+            cursor: pointer;
+        }
+        .return {
+            width: 9%;
+            height: 8%;
+            position: relative;
+            left: 87%;
+            top: 5%;
+            cursor: pointer;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="content1">
+        <div class="content2">
+            <div class="people" onclick="jump('people')"></div>
+            <div class="zuopin" onclick="jump('zuopin')"></div>
+            <div class="shougao" onclick="jump('shougao')"></div>
+            <div class="test" onclick="jump('test')"></div>
+        </div>
+        <div class="return">
+            <img src="../images/back.png" onclick="back()">
+        </div>
+    </div>
+</div>
+<script>
+    function jump(getobjs) {
+        if (getobjs == 'people') {
+            window.location.href = './people.html';
+        } else if (getobjs == 'zuopin') {
+            window.location.href = './zp-menu.html';
+        } else if (getobjs == 'shougao') {
+            window.location.href = './shougao.html';
+        } else if (getobjs == 'test') {
+            window.location.href = './test.html';
+        }
+    }
+    function back() {
+        window.location.href='../index.html';
+    }
+</script>
+</body>
+</html>

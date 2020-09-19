@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作品——《魔女宅急便》</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <style type="text/css">
+        * {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/menubg.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .content {
+            background: rgba(255,255,255,0.9);
+            width: 95%;
+            height: 90%;
+            /*margin: 0 auto;*/
+            position: absolute;
+            top: 5%;
+            left: 2.5%;
+        }
+
+        .content1 {
+            width: 98%;
+            height: 98%;
+            background-image: url("../images/border.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 1%;
+            top: 1%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .font{
+            width:5%;
+            height: 80%;
+            float: left;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+        .haibao{
+            width: 25%;
+            height: 75%;
+            margin-left: 10%;
+            margin-top: 6%;
+            float: left;
+        }
+        .text{
+            font-family: 'FZCHSJW';
+            font-size: 28px;
+            line-height: 180%;
+            color: #57a2df;
+            width: 40%;
+            height: 80%;
+            overflow: scroll;
+            float: left;
+            margin-left: 4%;
+            margin-top: 5%;
+            text-shadow: 2px 2px 0px #FFFFFF, -2px -2px 0px #FFFFFF, 3px 3px 0px #FFFFFF, -3px -3px 0px #FFFFFF, 4px 4px 0px #FFFFFF, -4px -4px 0px #FFFFFF;
+        }
+        .return {
+            width: 8%;
+            height: 8%;
+            position: relative;
+            left: 89%;
+            top: -3%;
+        }
+
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="content1">
+        <div class="font"><img src="../images/zp/fonts-monv.png"></div>
+        <div class="haibao"><img src="../images/zp/haibao-monv.png" onclick="to()"></div>
+        <div class="text"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;魔法少女一旦到了13岁就必须离开家进行为期一年的独立修行，
+            琪琪也不例外。她带着黑猫吉吉来到一个靠海的大城市中，可是谁都不搭理她。沮丧的琪琪偶然替别人送去一件遗失品，从而获得了面包店老板
+            娘的好感。在她的帮助下，琪琪利用自己的飞行魔法开始了快递业务。
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;渐渐地，琪琪习惯了新的环境，工作也进行得很顺利，她结识不少新朋友。一个热衷于
+            制造飞机的男孩“蜻蜓”邀请琪琪参加飞行俱乐部的聚会。在聚会当天，琪琪为了帮助一位老夫人送东西而没有去成，并在雨中得了感冒。琪琪
+            突然发现自己的魔法能力正在削弱。好友乌尔斯拉邀请情绪低落的琪琪去自己家玩，在她的安慰下琪琪又恢复了自信。电视里播出“蜻蜓”开飞
+            机试飞遇险的新闻，琪琪骑上拖把奋力飞往出事地点，成功救下“蜻蜓”。</p></div>
+        <div class="return"><img src="../images/back.png" onclick="jump()"></div>
+    </div>
+</div>
+<script>
+    function jump() {
+        window.location.href='./zp-menu.html';
+    }
+    function to() {
+        window.location.href='./pintu.html';
+    }
+</script>
+</body>
+</html>

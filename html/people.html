@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人物介绍</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <style type="text/css">
+        * {
+            width: 100%;
+            height: 100%;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/menubg.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .content {
+            background: rgba(255,255,255,0.9);
+            /*opacity: 0.9;*/
+            width: 95%;
+            height: 90%;
+            /*margin: 0 auto;*/
+            position: absolute;
+            top: 5%;
+            left: 2.5%;
+        }
+        .font{
+            float: left;
+            padding: 0;
+            margin-left: 5%;
+            margin-top: 4%;
+            width: 10%;
+            height: 86%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .content2{
+            padding: 0;
+            /*margin-top: 1.5%;*/
+            width: 80%;
+            height: 95%;
+            position: relative;
+            top: 2.5%;
+            background-image: url("../images/people/border2.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+
+            float: right;
+        }
+        .content2-1{
+            width: 94%;
+            height: 91%;
+            background: rgba(171,202,216,0.97);
+
+            position: absolute;
+            left: 3%;
+            top: 4.5%;
+        }
+        .head{
+            float: left;
+            width: 35%;
+            height: 70%;
+            padding: 0;
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+        .text{
+            font-family: 'FZCHSJW';
+            font-size: 28px;
+            line-height: 180%;
+            color: #57a2df;
+            width: 50%;
+            height: 80%;
+            overflow: scroll;
+            float: left;
+            margin-left: 4%;
+            margin-top: 5%;
+            text-shadow: 1px 1px 0px #FFFFFF, -1px -1px 0px #FFFFFF, 2px 2px 0px #FFFFFF, -2px -2px 0px #FFFFFF, 3px 3px
+            0px #FFFFFF, -3px -3px 0px #FFFFFF;
+        }
+        .return {
+            width: 10%;
+            height: 8%;
+            position: relative;
+            left: 87%;
+            top: 2%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="font"><img src="../images/people/font-people.png"></div>
+    <div class="content2">
+        <div class="content2-1">
+            <div class="head">
+                <img src="../images/people/head.png">
+            </div>
+            <div class="text"><p>宫崎骏（外文名：みやざき はやお，1941年1月5日-），出生于东京都文京区，毕业于日本东京学习院大学政治经
+                济部，日本动画师、漫画家及动画导演，日本吉卜力工作室核心人物之一，现任吉卜力工作室董事、德间纪念动画文化财团理事长、三鹰
+                市立动画美术馆馆长。宫崎骏曾进入东映动画公司，从事动画师工作，后与高田勋、铃木敏夫共同创立吉卜力工作室，先后执导了《天空
+                之城》《幽灵公主》《千与千寻》《哈尔的移动城堡》等11部长篇动画电影，并获得第87届奥斯卡金像奖终身成就奖等奖项。</p></div>
+            <div class="return"><img src="../images/back.png" onclick="jump()"></div>
+        </div>
+    </div>
+</div>
+<script>
+    function jump() {
+        window.location.href='./menu.html'
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作品——《哈尔的移动城堡》</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <style type="text/css">
+        * {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/menubg.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .content {
+            background: rgba(255,255,255,0.83);
+            width: 95%;
+            height: 90%;
+            position: absolute;
+            top: 5%;
+            left: 2.5%;
+        }
+
+        .content1 {
+            width: 98%;
+            height: 98%;
+            background-image: url("../images/border.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 1%;
+            top: 1%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .font{
+            width:5%;
+            height: 80%;
+            float: left;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+        .haibao{
+            width: 25%;
+            height: 75%;
+            margin-left: 10%;
+            margin-top: 6%;
+            float: left;
+        }
+        .text{
+            font-family: 'FZCHSJW';
+            font-size: 28px;
+            line-height: 180%;
+            color: #57a2df;
+            width: 40%;
+            height: 80%;
+            overflow: scroll;
+            float: left;
+            margin-left: 4%;
+            margin-top: 5%;
+            text-shadow: 2px 2px 0px #FFFFFF, -2px -2px 0px #FFFFFF, 3px 3px 0px #FFFFFF, -3px -3px 0px #FFFFFF, 4px 4px 0px #FFFFFF, -4px -4px 0px #FFFFFF;
+        }
+        .return {
+            width: 8%;
+            height: 8%;
+            position: relative;
+            left: 89%;
+            top: -3%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="content1">
+        <div class="font"><img src="../images/zp/fonts-haer.png"></div>
+        <div class="haibao"><img src="../images/zp/haibao-haer.png"></div>
+        <div class="text"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是一个魔法与科学同在的世界。在一个正面临战争的国家里，住着一名相貌平凡但心灵手巧的18岁少女索菲，她在死去
+            父亲所留下的帽子店里工作。一天，索菲在街上偶遇一个美貌的青年，他正是恶名远扬的魔法师哈尔，而索菲爱上了他。当晚，荒地的魔女突然
+            来到索菲家，对她下了诅咒把她变成了90岁的老婆婆。索菲离开了家，机缘巧合之下进入了哈尔的移动城堡，在那里充当勤杂工。通过与哈尔的
+            朝夕相处，索菲渐渐了解到这个魔法师不为人知的内心世界，而哈尔也在索菲的影响下开始改变。战火终于蔓延开了，哈尔投入了战斗，索菲按
+            耐不住心中的担忧，驱动城堡冒险前往寻找哈尔……</p></div>
+        <div class="return"><img src="../images/back.png" onclick="jump()"></div>
+    </div>
+</div>
+<script>
+    function jump() {
+        window.location.href='./zp-menu.html'
+    }
+</script>
+</body>
+</html>
